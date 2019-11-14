@@ -1,0 +1,141 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(150, 150, 150);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(80, 80, 80); 
+}
+
+.nav {
+    background-color: transparent;
+    overflow: hidden;
+    font-size: 16px;
+    margin: auto;
+}
+
+h1 {
+    float: left;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    letter-spacing: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin-right: 50px;
+    float: right;
+}
+
+li {
+    float: left;
+}
+
+.nav a {
+    float: right;
+    color: grey;
+    text-align: right;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav a:hover {
+    color: black;
+
+}
+
+.nav a.active {
+    border-bottom: solid;
+    border-width: 2px;
+    color: black;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+h2 {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* HOME PAGE */
+
+* {
+    box-sizing: border-box;
+}
+
+.img-container {
+    float: left;
+    width: 33.33%;
+    padding: 0px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.des-container {
+    position: relative;
+    width: 100%;
+  }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: grey;
+    
+  }
+
+.text {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+  }  
+
+.des-container:hover .overlay {
+    opacity: 0.2;
+}
+
+.des-container:hover #portfoliopage {
+    filter: blur(1px);
+}
+
+.des-container:hover .text {
+    opacity: 0.8;
+    transition: .5s ease;
+}
+
